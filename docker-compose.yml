@@ -3,12 +3,12 @@ version: '3.8'
 services:
   frontend:
     build:
-      context: ./front/frontend
+      context: ./frontend/frontend
       dockerfile: Dockerfile
     ports:
       - "80:3000"
     volumes:
-      - ./front/frontend:/dov/frontend
+      - ./frontend/frontend:/dov/frontend
     environment:
       - NODE_ENV=production
 
